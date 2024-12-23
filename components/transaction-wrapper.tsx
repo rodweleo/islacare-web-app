@@ -34,9 +34,7 @@ export default function TransactionWrapper({ address }: { address: Address }) {
 
     return (
         <div className="flex w-[450px]">
-     
             <Transaction
-                address={address as `0x${string}`}
                 capabilities={{
                     paymasterService: {
                         url: process.env.PAYMASTER_AND_BUNDLER_SEPOLIA_ENDPOINT!,
