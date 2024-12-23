@@ -92,7 +92,8 @@ export default function ContactSection() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#2B5693] text-white py-3 rounded-md hover:bg-[#1e3d6a] transition-colors"
+                  disabled
+                  className="disabled:cursor-not-allowed disabled:bg-slate-300 w-full bg-[#2B5693] text-white py-3 rounded-md hover:bg-[#1e3d6a] transition-colors"
                 >
                   SUBMIT INQUIRY
                 </button>

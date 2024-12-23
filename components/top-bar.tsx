@@ -9,7 +9,7 @@ export default function TopBar() {
 
   return (
     <div className="w-full bg-[#2B5693] text-white px-4 py-1.5 text-sm">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex flex-wrap gap-5 justify-between items-center">
         <div className="flex items-center space-x-6">
           <a href="mailto:info@islacare.com" className="flex items-center hover:text-gray-200">
             <span>info@islacare.com</span>
