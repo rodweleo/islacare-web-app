@@ -46,7 +46,7 @@ export function DonationDialog() {
                 <div className="space-y-6 mt-4">
                     {/* Description */}
                     <p className="text-gray-300">
-                        We'll get right to the point: we're asking you to support us. We're a nonprofit that relies on support from people like you. If everyone reading this gives $10 monthly, we can thrive for years.
+                        We&apos;ll get right to the point: we&apos;re asking you to support us. We&apos;re a nonprofit that relies on support from people like you. If everyone reading this gives $10 monthly, we can thrive for years.
                     </p>
 
                     {/* Frequency Selection */}
@@ -97,7 +97,7 @@ export function DonationDialog() {
                     <div className="flex items-start space-x-2">
                         <Checkbox id="transaction-fee" />
                         <Label htmlFor="transaction-fee" className="text-sm text-gray-300">
-                            Yes, I'll generously add $0.75 each month to cover the transaction fees
+                            Yes, I&apos;ll generously add $0.75 each month to cover the transaction fees
                         </Label>
                     </div>
 

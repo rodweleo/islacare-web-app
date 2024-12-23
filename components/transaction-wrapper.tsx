@@ -13,8 +13,6 @@ import type {
     TransactionResponse,
 } from '@coinbase/onchainkit/transaction';
 import type { Address, ContractFunctionParameters } from 'viem';
-import WalletWrapper from './wallet-wrapper';
-
 
 export default function TransactionWrapper({ address }: { address: Address }) {
     const contracts = [

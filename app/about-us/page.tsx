@@ -1,5 +1,5 @@
 import { Target, Users, Heart, Trophy } from 'lucide-react'
-
+import Image from "next/image"
 export default function AboutUs() {
     return (
         <main>
@@ -28,10 +28,12 @@ export default function AboutUs() {
                             </p>
                         </div>
                         <div>
-                            <img
+                            <Image
                                 src="/placeholder.svg?height=400&width=600"
                                 alt="Islacare team"
                                 className="rounded-lg shadow-lg"
+                                width={1920}
+                                height={1080}
                             />
                         </div>
                     </div>
@@ -101,10 +103,12 @@ export default function AboutUs() {
                             }
                         ].map((member, index) => (
                             <div key={index} className="text-center">
-                                <img
+                                <Image
                                     src={member.image}
                                     alt={member.name}
                                     className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
+                                    width={1920}
+                                    height={1080}
                                 />
                                 <h3 className="font-semibold text-xl mb-1">{member.name}</h3>
                                 <p className="text-[#2B5693] mb-2">{member.role}</p>

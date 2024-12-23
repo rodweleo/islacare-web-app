@@ -24,7 +24,7 @@ export default function AboutSection() {
           <div className="space-y-8">
             <div>
               <h2 className="text-sm font-medium text-[#2B5693] mb-2">ABOUT ISLACARE</h2>
-              <h3 className="text-3xl font-bold text-gray-900">Supporting Islamic Women's Mental Health</h3>
+              <h3 className="text-3xl font-bold text-gray-900">Supporting Islamic Women&apos;s Mental Health</h3>
             </div>
             
             <p className="text-gray-600">

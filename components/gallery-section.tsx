@@ -1,3 +1,6 @@
+
+import Image from "next/image"
+
 export default function GallerySection() {
   return (
     <section className="py-24 bg-white">
@@ -35,10 +38,12 @@ export default function GallerySection() {
             },
           ].map((image, index) => (
             <div key={index} className="aspect-square relative overflow-hidden rounded-lg">
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                width={1920}
+                height={1080}
               />
             </div>
           ))}

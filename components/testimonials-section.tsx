@@ -1,4 +1,5 @@
 import { Star } from 'lucide-react'
+import Image from "next/image"
 
 export default function TestimonialsSection() {
   return (
@@ -32,10 +33,12 @@ export default function TestimonialsSection() {
           ].map((testimonial, index) => (
             <div key={index} className="text-center p-8 bg-white rounded-lg border border-gray-100">
               <div className="flex justify-center mb-6">
-                <img
+                <Image
                   src={testimonial.image}
                   alt={`${testimonial.name}'s profile`}
                   className="w-20 h-20 rounded-full"
+                  width={1920}
+                  height={1080}
                 />
               </div>
               <div className="flex justify-center mb-4">
