@@ -1,4 +1,12 @@
+"use client"
+
+import useDonateModalStore from '@/hooks/use-donate-modal-store';
+import { Button } from './ui/button';
+
 export default function TopBar() {
+
+  const { setOpen } = useDonateModalStore()
+
   return (
     <div className="w-full bg-[#2B5693] text-white px-4 py-1.5 text-sm">
       <div className="container mx-auto flex justify-between items-center">
@@ -28,6 +36,13 @@ export default function TopBar() {
             <div className="w-4 h-4 bg-white rounded-full" />
           </a>
         </div>
+
+        <ul>
+          <li>
+            <Button className="bg-orange-400 hover:bg-orange-500 font-medium" onClick={() => setOpen(true)}>DONATE NOW</Button>
+          </li>
+     
+        </ul>
       </div>
     </div>
   )

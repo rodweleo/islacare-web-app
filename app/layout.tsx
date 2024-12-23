@@ -4,7 +4,9 @@ import "./globals.css";
 import TopBar from "@/components/top-bar";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer"
-
+import { Providers } from "@/components/providers";
+import '@coinbase/onchainkit/styles.css';
+import { DonationDialog } from "@/components/donate-modal";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,15 +29,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <TopBar />
-        <Navigation />
-        {children}
-        <Footer />
+        <Providers>
+          <TopBar />
+          <Navigation />
+          {children}
+          <DonationDialog/>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
