@@ -24,14 +24,12 @@ type WalletWrapperParams = {
 };
 export default function WalletWrapper({
     className,
-    text,
-    withWalletAggregator = false,
+    text
 }: WalletWrapperParams) {
     return (
         <>
             <Wallet>
                 <ConnectWallet
-                    withWalletAggregator={withWalletAggregator}
                     text={text}
                     className={className}
                 >
