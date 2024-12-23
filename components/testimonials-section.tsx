@@ -46,9 +46,9 @@ export default function TestimonialsSection() {
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <blockquote className="text-gray-600 mb-6">
-                "{testimonial.quote}"
-              </blockquote>
+              <q className="text-gray-600 mb-6">
+                {testimonial.quote}
+              </q>
               <div className="space-y-1">
                 <div className="font-semibold text-gray-900">{testimonial.name}</div>
                 <div className="text-sm text-gray-500">{testimonial.role}</div>
