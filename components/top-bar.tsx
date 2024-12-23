@@ -2,6 +2,7 @@
 
 import useDonateModalStore from '@/hooks/use-donate-modal-store';
 import { Button } from './ui/button';
+import { Facebook, Linkedin, Phone, Twitter, Instagram } from 'lucide-react';
 
 export default function TopBar() {
 
@@ -17,23 +18,27 @@ export default function TopBar() {
           <div className="flex items-center">
             <span>458 Oak Ave. Denver, CO</span>
           </div>
+          <div className="flex items-center space-x-2">
+            <Phone className="w-4 h-4" />
+            <span className="font-medium">(+254) 795-565-344</span>
+          </div>
         </div>
         <div className="flex items-center space-x-4">
           <a href="#" className="hover:text-gray-200">
             <span className="sr-only">Facebook</span>
-            <div className="w-4 h-4 bg-white rounded-full" />
+            <Facebook className="w-4 h-4" />
           </a>
           <a href="#" className="hover:text-gray-200">
             <span className="sr-only">Twitter</span>
-            <div className="w-4 h-4 bg-white rounded-full" />
+            <Twitter className="w-4 h-4" />
           </a>
           <a href="#" className="hover:text-gray-200">
             <span className="sr-only">LinkedIn</span>
-            <div className="w-4 h-4 bg-white rounded-full" />
+            <Linkedin className="w-4 h-4" />
           </a>
           <a href="#" className="hover:text-gray-200">
             <span className="sr-only">Instagram</span>
-            <div className="w-4 h-4 bg-white rounded-full" />
+            <Instagram className="w-4 h-4" />
           </a>
         </div>
 

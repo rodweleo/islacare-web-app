@@ -27,11 +27,11 @@ export default function AboutUs() {
                                 our community&apos;s values and needs.
                             </p>
                         </div>
-                        <div>
+                        <div className="aspect-[4/3] relative">
                             <Image
-                                src="/placeholder.svg?height=400&width=600"
-                                alt="Islacare team"
-                                className="rounded-lg shadow-lg"
+                                src="/images/islacare-about-img.webp"
+                                alt="Therapy consultation session"
+                                className="rounded-lg object-cover w-full h-full"
                                 width={1920}
                                 height={1080}
                             />

@@ -1,5 +1,7 @@
-import { Phone } from 'lucide-react'
+
 import Link from "next/link"
+import MobileSidebar from './mobile-sidebar'
+import { Button } from './ui/button'
 
 export default function Navigation() {
   return (
@@ -9,7 +11,7 @@ export default function Navigation() {
           Islacare
         </Link>
         
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           <Link href="/about-us" className="text-gray-600 hover:text-[#2B5693]">
             ABOUT US
           </Link>
@@ -25,15 +27,13 @@ export default function Navigation() {
           <Link href="/events" className="text-gray-600 hover:text-[#2B5693]">
             EVENTS
           </Link>
-          <Link href="/contact" className="text-gray-600 hover:text-[#2B5693]">
-            CONTACT US
-          </Link>
+          <Button className="bg-[#2B5693]">CONTACT US</Button>
         </div>
 
-        <div className="flex items-center space-x-2 text-[#2B5693]">
-          <Phone className="w-5 h-5" />
-          <span className="font-medium">(555) 123-4567</span>
+        <div className="lg:hidden">
+          <MobileSidebar />
         </div>
+        
       </div>
     </nav>
   )

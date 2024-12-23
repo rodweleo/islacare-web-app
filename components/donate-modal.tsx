@@ -36,7 +36,7 @@ export function DonationDialog() {
                 }
             }}
         >
-            <DialogContent className="sm:max-w-[600px] bg-[#2b2d42] text-white border-gray-800">
+            <DialogContent className="max-w-[400px] max-h-[500px] overflow-y-scroll sm:max-w-[600px] bg-[#2b2d42] text-white border-gray-800">
                 <DialogHeader>
                     <DialogTitle className="text-3xl font-bold">
                         Help us do more
